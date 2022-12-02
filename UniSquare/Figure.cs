@@ -3,7 +3,7 @@
     public abstract class Figure
     {
         /// <summary>
-        /// Вычисляет площадь фигуры
+        /// Возвращает площадь фигуры
         /// </summary>
         /// <returns></returns>
         public abstract double GetSquare();
