@@ -14,13 +14,24 @@ namespace UniSquare
 
         public Triangle() { }
 
+        /// <summary>
+        /// Создает треугольник с тремя заданными сторонами
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
         public Triangle(double a, double b, double c)
         {
             _a = a;
             _b = b;
             _c = c;
         }
-
+        
+        /// <summary>
+        /// Создает треугольник с заданными высотой и основанием
+        /// </summary>
+        /// <param name="bas"></param>
+        /// <param name="height"></param>
         public Triangle(double bas, double height)
         {
             _base = bas;
@@ -49,6 +60,7 @@ namespace UniSquare
             base.SetPoints(points);
         }
 
+        ///<inheritdoc/>
         public override double GetSquare()
         {
             try
@@ -88,6 +100,11 @@ namespace UniSquare
             }
         }
 
+
+        /// <summary>
+        /// Проверяет треугольник на наличие прямого угла
+        /// </summary>
+        /// <returns></returns>
         public bool IsRectangular()
         {
             if (_a is { } a &&

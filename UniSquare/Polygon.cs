@@ -23,6 +23,11 @@ namespace UniSquare
             throw new Exception("Must be at least three points");
         }
 
+        /// <summary>
+        /// Вычисляет площадь любой полигональной фигуры на плоскости по точкам
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public double GetPointsSquare()
         {
             if (_points == null)
