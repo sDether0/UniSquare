@@ -11,6 +11,7 @@ namespace UniSquare
 
         }
 
+        ///<inheritdoc/>
         public override double GetSquare() => GetPointsSquare();
 
         public virtual void SetPoints(List<Point> points)
